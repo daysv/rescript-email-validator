@@ -1,0 +1,36 @@
+{
+  "name": "rescript-email-validator",
+  "description": "Rescript binding for email-validator",
+  "version": "0.0.1",
+  "scripts": {
+    "build": "rescript build",
+    "watch": "rescript build -w",
+    "clean": "rescript clean",
+    "test": "rescript && pta"
+  },
+  "keywords": [
+    "reasonml",
+    "reason",
+    "rescript",
+    "binding",
+    "rescript-email-validator",
+    "email-validator"
+  ],
+  "author": "daysv",
+  "license": "MIT",
+  "peerDependencies": {
+    "rescript": "*"
+  },
+  "dependencies": {
+    "email-validator": "^2.0.4"
+  },
+  "devDependencies": {
+    "@dusty-phillips/rescript-zora": "^3.0.1",
+    "pta": "^1.1.0",
+    "rescript": "*"
+  },
+  "files": [
+    "/src",
+    "/bsconfig.json"
+  ]
+}
