@@ -32,5 +32,13 @@
   "files": [
     "/src",
     "/bsconfig.json"
-  ]
+  ],
+  "homepage": "https://github.com/daysv/rescript-email-validator",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/daysv/rescript-email-validator.git"
+  },
+  "bugs": {
+    "url": "https://github.com/daysv/rescript-email-validator/issues"
+  }
 }
