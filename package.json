@@ -1,6 +1,6 @@
 {
   "name": "rescript-email-validator",
-  "description": "Rescript binding for email-validator",
+  "description": "Rescript bindings for email-validator",
   "version": "1.0.1",
   "scripts": {
     "build": "rescript build",
