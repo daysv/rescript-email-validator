@@ -108,7 +108,6 @@ Zora.test("TEST EMAILS AGAINST VALIDATOR", (function (t) {
                       t.ok(EmailValidator.validate(v), v);
                     }));
             });
-        t.ok(false, "test false");
       }));
 
 export {
