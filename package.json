@@ -1,5 +1,6 @@
 {
   "name": "rescript-email-validator",
+  "description": "ReScript bindings for email-validator",
   "version": "1.0.2",
   "type": "module",
   "main": "src/EmailValidator.res.js",
@@ -7,13 +8,18 @@
     "res:build": "rescript",
     "res:clean": "rescript clean",
     "res:dev": "rescript -w",
-    "test": "onchange --initial 'tests/*.js' -- pta 'tests/*.js'",
-    "test:only": "onchange --initial 'tests/*.js' -- pta --only 'tests/*.js'"
+    "test": "onchange --initial 'test/*.js' -- pta 'test/*.js'",
+    "test:only": "onchange --initial 'test/*.js' -- pta --only 'test/*.js'"
   },
   "keywords": [
-    "rescript"
+    "reasonml",
+    "reason",
+    "rescript",
+    "binding",
+    "rescript-email-validator",
+    "email-validator"
   ],
-  "author": "",
+  "author": "daysv",
   "license": "MIT",
   "dependencies": {
     "@rescript/core": "^1.3.0",
@@ -23,5 +29,17 @@
     "@dusty-phillips/rescript-zora": "^4.0.0",
     "onchange": "^7.1.0",
     "pta": "^1.2.0"
+  },
+  "files": [
+    "/src",
+    "/rescript.json"
+  ],
+  "homepage": "https://github.com/daysv/rescript-email-validator",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/daysv/rescript-email-validator.git"
+  },
+  "bugs": {
+    "url": "https://github.com/daysv/rescript-email-validator/issues"
   }
 }
