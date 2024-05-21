@@ -8,8 +8,8 @@
     "res:build": "rescript",
     "res:clean": "rescript clean",
     "res:dev": "rescript -w",
-    "test": "node 'test/test.res.js'",
-    "test:dev": "pta 'test/*.js'",
+    "test": "rescript && pta",
+    "test:dev": "onchange --initial 'test/*.js' -- pta 'test/*.js'",
     "test:only": "onchange --initial 'test/*.js' -- pta --only 'test/*.js'"
   },
   "keywords": [
