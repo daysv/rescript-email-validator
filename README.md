@@ -1,6 +1,5 @@
 # rescript-email-validator
- [![npm version](https://img.shields.io/npm/v/rescript-email-validator.svg?style=flat)](https://www.npmjs.com/package/rescript-email-validator)
- [![Build Status](https://app.travis-ci.com/daysv/rescript-email-validator.svg?branch=master)](https://app.travis-ci.com/daysv/rescript-email-validator)
+ [![Build Status](https://app.travis-ci.com/daysv/rescript-email-validator.svg?branch=rescript)](https://app.travis-ci.com/daysv/rescript-email-validator)
 
 [Rescript](https://rescript-lang.org/docs/manual/latest/api) version for [email-validator](https://github.com/manishsaraan/email-validator). 
 
