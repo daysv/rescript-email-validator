@@ -1,6 +1,8 @@
 # rescript-email-validator
 
-[Rescript](https://rescript-lang.org/docs/manual/latest/api) version for [email-validator](https://github.com/manishsaraan/email-validator). 
+![Node.js CI](https://github.com/daysv/rescript-email-validator/actions/workflows/node.js.yml/badge.svg)
+
+[ReScript](https://rescript-lang.org/docs/manual/latest/api) version for [email-validator](https://github.com/manishsaraan/email-validator). 
 
 ## Install
 ```
