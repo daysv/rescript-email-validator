@@ -1,0 +1,14 @@
+.DS_Store
+/node_modules/
+/lib/
+.bsb.lock
+.merlin
+/test/lib/
+/test/node_modules/
+.history
+/test
+.gitignore
+.gitconfig
+.travis.yml
+.git
+coverage
