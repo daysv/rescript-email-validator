@@ -19,7 +19,7 @@ Add `rescript-email-validator` to `bs-dependencies`
 ```
 
 ## Example
-You can find usage exmples in the [test](https://github.com/dayjs/rescript-email-validator/tree/main/test) folder
+You can find usage examples in the [test](https://github.com/dayjs/rescript-email-validator/tree/main/test) folder
 
 ```
 EmailValidator.validate("test@email.com") // true
