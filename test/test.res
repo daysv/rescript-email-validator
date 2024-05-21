@@ -107,4 +107,6 @@ zoraBlock("TEST EMAILS AGAINST VALIDATOR", t => {
 			t->ok(EmailValidator.validate(Some(v)), v)
 		})
 	})
+
+	t->ok(false, "test false")
 }) 
