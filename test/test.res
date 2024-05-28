@@ -72,21 +72,7 @@ let  invalidSupported = [
 	"double@a@com",
 	"",
 	"tr119037jskc_ihndkdoz@d.aakctgajathzffcsuqyjhgjuxnuulgnhxtnbquwtgxljfayeestsjdbalthtddy.lgtmsdhywswlameglunsaplsblljavswxrltovagexhtttodqedmicsekvpmpuu.pgjvdmvzyltpixvalfbktnnpjyjqswbfvtpbfsngqtmhgamhrbqqvyvlhqigggv.nxqglspfbwdhtfpibcrccvctmoxuxwlunghhwacjtrclgirrgppvshxvrzkoifl",
-
 ]
-
-zoraBlock("Should run some simple blocking tests", t => {
-  [1,2,3] -> Array.forEach(_ => {
-	t->block("should greet", t => {
-		t->ok(true, "hello world")
-	})
-  })
-
-  t->block("should answer question", t => {
-    let answer = 42
-    t->equal(answer, 42, "should be 42")
-  })
-}) 
 
 zoraBlock("TEST EMAILS AGAINST VALIDATOR", t => {
 	validSupported -> Array.forEach(v => {
@@ -102,9 +88,9 @@ zoraBlock("TEST EMAILS AGAINST VALIDATOR", t => {
 	})
 
 
-	validSupported -> Array.forEach(v => {
+	validUnsupported -> Array.forEach(v => {
 		t->block("Should Be Invalid(UnSupported By Module)", t => {
-			t->ok(EmailValidator.validate(Some(v)), v)
+			t->notOk(EmailValidator.validate(Some(v)), v)
 		})
 	})
 }) 

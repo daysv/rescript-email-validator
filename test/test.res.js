@@ -77,21 +77,6 @@ var invalidSupported = [
   "tr119037jskc_ihndkdoz@d.aakctgajathzffcsuqyjhgjuxnuulgnhxtnbquwtgxljfayeestsjdbalthtddy.lgtmsdhywswlameglunsaplsblljavswxrltovagexhtttodqedmicsekvpmpuu.pgjvdmvzyltpixvalfbktnnpjyjqswbfvtpbfsngqtmhgamhrbqqvyvlhqigggv.nxqglspfbwdhtfpibcrccvctmoxuxwlunghhwacjtrclgirrgppvshxvrzkoifl"
 ];
 
-Zora.test("Should run some simple blocking tests", (function (t) {
-        [
-            1,
-            2,
-            3
-          ].forEach(function (param) {
-              t.test("should greet", (function (t) {
-                      t.ok(true, "hello world");
-                    }));
-            });
-        t.test("should answer question", (function (t) {
-                t.equal(42, 42, "should be 42");
-              }));
-      }));
-
 Zora.test("TEST EMAILS AGAINST VALIDATOR", (function (t) {
         validSupported.forEach(function (v) {
               t.test("Should Be Valid", (function (t) {
@@ -103,9 +88,9 @@ Zora.test("TEST EMAILS AGAINST VALIDATOR", (function (t) {
                       t.notOk(EmailValidator.validate(v), v);
                     }));
             });
-        validSupported.forEach(function (v) {
+        validUnsupported.forEach(function (v) {
               t.test("Should Be Invalid(UnSupported By Module)", (function (t) {
-                      t.ok(EmailValidator.validate(v), v);
+                      t.notOk(EmailValidator.validate(v), v);
                     }));
             });
       }));
