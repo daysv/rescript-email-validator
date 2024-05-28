@@ -45,5 +45,8 @@
   },
   "bugs": {
     "url": "https://github.com/daysv/rescript-email-validator/issues"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org"
   }
 }

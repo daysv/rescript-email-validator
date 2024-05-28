@@ -13,3 +13,6 @@
 .git
 coverage
 .github
+.test
+Makefile
+docs
