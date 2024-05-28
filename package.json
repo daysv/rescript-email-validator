@@ -1,16 +1,17 @@
 {
   "name": "rescript-email-validator",
   "description": "ReScript bindings for email-validator",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "type": "module",
   "main": "src/EmailValidator.res.js",
   "scripts": {
     "res:build": "rescript",
     "res:clean": "rescript clean",
     "res:dev": "rescript -w",
-    "test": "rescript && pta",
+    "test": "rescript && pta && rescript-tools reanalyze",
     "test:dev": "onchange --initial 'test/*.js' -- pta 'test/*.js'",
-    "test:only": "onchange --initial 'test/*.js' -- pta --only 'test/*.js'"
+    "test:only": "onchange --initial 'test/*.js' -- pta --only 'test/*.js'",
+    "doc": "make doc"
   },
   "keywords": [
     "reasonml",
@@ -28,6 +29,8 @@
   },
   "devDependencies": {
     "@dusty-phillips/rescript-zora": "^4.0.0",
+    "@nobleai/rescript-documentation": "^0.7.2",
+    "@rescript/tools": "^0.6.2",
     "onchange": "^7.1.0",
     "pta": "^1.2.0"
   },
